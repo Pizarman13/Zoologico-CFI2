@@ -9,8 +9,8 @@ private String tipoTerreno;
     }
 
     // constructor con parametros
-    public Terrestre(String tipoTerreno, int numAnimales, String climatologia, String tamaño) {
-        super(numAnimales, climatologia, tamaño);
+    public Terrestre(String tipoTerreno, int numAnimales, double temperatura, double humedad, boolean limpieza, double tamaño) {
+        super(numAnimales, temperatura, humedad, limpieza, tamaño);
         this.tipoTerreno = tipoTerreno;
     }
 
@@ -27,6 +27,6 @@ private String tipoTerreno;
     // metodo toString
     @Override
     public String toString() {
-        return "Terrestre { " + "tipoTerreno = " + tipoTerreno + ", numAnimales = " + getNumAnimales() + ", climatologia = " + getClimatologia() + ", tamaño = " + getTamaño() +'}';
+        return "Terrestre { " + "tipoTerreno = " + tipoTerreno + ", numAnimales = " + getNumAnimales() + ", temperatura = " + getTemperatura() + ", humedad = " + getHumedad() + ", limpieza = " + isLimpieza() + ", tamaño = " + getTamaño() +'}';
     }
 }

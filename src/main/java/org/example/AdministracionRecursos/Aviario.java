@@ -9,8 +9,8 @@ public class Aviario extends Habitat{
     }
 
     // constructor con parametros
-    public Aviario(int altura, int numAnimales, String climatologia, String tamaño) {
-        super(numAnimales, climatologia, tamaño);
+    public Aviario(int altura, int numAnimales, double temperatura, double humedad, boolean limpieza, double tamaño) {
+        super(numAnimales, temperatura, humedad, limpieza, tamaño);
         this.altura = altura;
     }
 
@@ -27,6 +27,6 @@ public class Aviario extends Habitat{
     // metodo toString
     @Override
     public String toString() {
-        return "Aviario { " + "altura = " + altura + ", numAnimales = " + getNumAnimales() + ", climatologia = " + getClimatologia() + ", tamaño = " + getTamaño() +'}';
+        return "Aviario { " + "altura = " + altura + ", numAnimales = " + getNumAnimales() + ", temperatura = " + getTemperatura() + ", humedad = " + getHumedad() + ", limpieza = " + isLimpieza() + ", tamaño = " + getTamaño() +'}';
     }
 }

@@ -9,8 +9,8 @@ public class Acuatico extends Habitat{
     }
 
     // constructor con parametros
-    public Acuatico(String tipoAgua,  int numAnimales, String climatologia, String tamaño) {
-        super(numAnimales, climatologia, tamaño);
+    public Acuatico(String tipoAgua,  int numAnimales, double temperatura, double humedad, boolean limpieza, double tamaño) {
+        super(numAnimales, temperatura, humedad, limpieza, tamaño);
         this.tipoAgua = tipoAgua;
     }
 
@@ -27,6 +27,6 @@ public class Acuatico extends Habitat{
     // metodo toString
     @Override
     public String toString() {
-        return "Acuatico { " + "tipoAgua = " + tipoAgua + ", numAnimales = " + getNumAnimales() + ", climatologia = " + getClimatologia() + ", tamaño = " + getTamaño() +'}';
+        return "Acuatico { " + "tipoAgua = " + tipoAgua + ", numAnimales = " + getNumAnimales() + ", temperatura = " + getTemperatura() + ", humedad = " + getHumedad() + ", limpieza = " + isLimpieza() + ", tamaño = " + getTamaño() +'}';
     }
 }
