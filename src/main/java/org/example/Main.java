@@ -1,17 +1,41 @@
 package org.example;
 
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        while (true) {
+
+            System.out.println("1. Visitante");
+            System.out.println("2. Trabajador");
+            System.out.println("Escoge una opcion: ");
+
+            try {
+                int opcion = sc.nextInt();
+                if (opcion == 1) {
+                    System.out.println("Bienvenido al maravilloso Zoologico visitante");
+
+                } else if (opcion == 2) {
+                    System.out.println("Oh! Hoy has llegado a tiempo, ponte el uniforme nos espera un duro dia de trabajo");
+
+                } else {
+                    System.out.println("Opcion no valida");
+                }
+            } catch (Exception e) {
+                System.out.println("Opcion no valida");
+                sc.next();
+            }
+
+
+
+
+
+
         }
     }
 }
