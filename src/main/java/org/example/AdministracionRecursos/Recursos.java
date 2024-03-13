@@ -58,7 +58,7 @@ public class Recursos {
         return "Recursos { " + "medicamentos = " + medicamentos + ", alimentos = " + alimentos + ", personal = " + personal + ", equipo = " + equipo + '}';
     }
 
-    static void revisarRecursos(Recursos recursos) {
+    public static void revisarRecursos(Recursos recursos) {
         if (recursos.getMedicamentos() < 10) {
             System.out.println("Faltan medicamentos");
         }

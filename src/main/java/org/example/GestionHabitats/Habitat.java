@@ -68,7 +68,7 @@ public class Habitat {
         return "Habitat { " + "numAnimales = " + numAnimales + ", temperatura = " + temperatura + ", humedad = " + humedad + ", limpieza = " + limpieza + ", tamaño = " + tamaño + '}';
     }
 
-    private void analisisDeCondiciones() {
+    public void analisisDeCondiciones() {
 
         if (limpieza == true) {
             System.out.println("El habitat esta limpio");
