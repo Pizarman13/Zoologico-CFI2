@@ -1,6 +1,8 @@
-package org.example.AdministracionRecursos;
+package org.example.GestionHabitats;
 
-public class Acuatico extends Habitat{
+import org.example.GestionHabitats.Habitat;
+
+public class Acuatico extends Habitat {
 
     private String tipoAgua;
 

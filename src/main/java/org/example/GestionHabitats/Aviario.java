@@ -1,6 +1,6 @@
-package org.example.AdministracionRecursos;
+package org.example.GestionHabitats;
 
-public class Aviario extends Habitat{
+public class Aviario extends Habitat {
 
     private int altura;
 

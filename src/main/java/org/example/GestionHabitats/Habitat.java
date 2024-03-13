@@ -1,4 +1,4 @@
-package org.example.AdministracionRecursos;
+package org.example.GestionHabitats;
 
 public class Habitat {
 

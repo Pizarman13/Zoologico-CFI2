@@ -5,8 +5,15 @@ import org.example.CuidadoAnimales.AnAcuatico;
 import org.example.CuidadoAnimales.AnAviario;
 import org.example.CuidadoAnimales.AnTerrestre;
 import org.example.CuidadoAnimales.Animal;
+import org.example.AdministracionRecursos.Recursos;
+import org.example.GestionHabitats.Habitat;
+import org.example.GestionHabitats.Acuatico;
+import org.example.GestionHabitats.Aviario;
+import org.example.GestionHabitats.Terrestre;
 
 public class Main {
+
+    Recursos recursos = new Recursos(10, 10, 10, true);
 
     static AnAcuatico pinguino = new AnAcuatico("Agua salada", "Pinguino", "Ave", "Pez", 2, 100);
     static AnAviario aguila = new AnAviario(true, "Aguila", "Ave", "Conejo", 3, 100);

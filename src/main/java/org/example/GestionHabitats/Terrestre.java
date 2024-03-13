@@ -1,6 +1,6 @@
-package org.example.AdministracionRecursos;
+package org.example.GestionHabitats;
 
-public class Terrestre extends Habitat{
+public class Terrestre extends Habitat {
 
 private String tipoTerreno;
 
