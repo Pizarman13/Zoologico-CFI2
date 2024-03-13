@@ -9,8 +9,8 @@ public class AnAviario extends Animal{
     }
 
     // constructor con parametros
-    public AnAviario(boolean vuelo, String nombre, String grupo, String alimento) {
-        super(nombre, grupo, alimento);
+    public AnAviario(boolean vuelo, String nombre, String grupo, String alimento, int comida, int salud) {
+        super(nombre, grupo, alimento, comida, salud);
         this.vuelo = vuelo;
     }
 
@@ -26,6 +26,6 @@ public class AnAviario extends Animal{
     // metodo toString
     @Override
     public String toString() {
-        return "AnAviario { " + "vuelo = " + vuelo + ", nombre = " + getNombre() + ", grupo = " + getGrupo() + '}';
+        return "AnAviario { " + "vuelo = " + vuelo + ", nombre = " + getNombre() + ", grupo = " + getGrupo() + ", alimento = " + getAlimento() + ", comida = " + getComida() + ", salud = " + getSalud() + '}';
     }
 }

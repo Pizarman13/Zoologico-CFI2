@@ -9,8 +9,8 @@ public class AnAcuatico extends Animal{
     }
 
     // constructor con parametros
-    public AnAcuatico(String tipoAgua, String nombre, String grupo, String alimento) {
-        super(nombre, grupo, alimento);
+    public AnAcuatico(String tipoAgua, String nombre, String grupo, String alimento, int comida, int salud) {
+        super(nombre, grupo, alimento, comida, salud);
         this.tipoAgua = tipoAgua;
     }
 
@@ -26,6 +26,6 @@ public class AnAcuatico extends Animal{
     // metodo toString
     @Override
     public String toString() {
-        return "AnAcuatico { " + "tipoAgua = " + tipoAgua + ", nombre = " + getNombre() + ", grupo = " + getGrupo() + ", alimento = " + getAlimento() + '}';
+        return "AnAcuatico { " + "tipoAgua = " + tipoAgua + ", nombre = " + getNombre() + ", grupo = " + getGrupo() + ", alimento = " + getAlimento() + ", comida = " + getComida() + ", salud = " + getSalud() + '}';
     }
 }

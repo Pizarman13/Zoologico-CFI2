@@ -10,8 +10,8 @@ public class AnTerrestre extends Animal{
     }
 
     // constructor con parametros
-    public AnTerrestre(int numPatas, String nombre, String grupo, String alimento) {
-        super(nombre, grupo, alimento);
+    public AnTerrestre(int numPatas, String nombre, String grupo, String alimento, int comida, int salud) {
+        super(nombre, grupo, alimento, comida, salud);
         this.numPatas = numPatas;
     }
 
@@ -27,6 +27,6 @@ public class AnTerrestre extends Animal{
     // metodo toString
     @Override
     public String toString() {
-        return "AnTerrestre { " + "numPatas = " + numPatas + ", nombre = " + getNombre() + ", grupo = " + getGrupo() + ", alimento = " + getAlimento() + '}';
+        return "AnTerrestre { " + "numPatas = " + numPatas + ", nombre = " + getNombre() + ", grupo = " + getGrupo() + ", alimento = " + getAlimento() + ", comida = " + getComida() + ", salud = " + getSalud() + '}';
     }
 }
